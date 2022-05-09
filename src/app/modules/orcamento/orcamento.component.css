@@ -1,0 +1,18 @@
+.title {
+    color: #000;
+    font-size: 2rem;
+}
+.table {
+    height: 100vh;
+    overflow-y: auto;
+}
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+@media (max-width: 600px) {
+    .content {
+        flex-direction: column;
+    }
+}

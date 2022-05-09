@@ -1,0 +1,11 @@
+.chart-canvas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 1200px) {
+    .chart-canvas {
+        height: 45vh !important;
+    }
+}
