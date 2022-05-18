@@ -6,8 +6,9 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
+    "postinstall": "ng build --aot --prod",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "deploy": "heroku git:remote -a grafica-web && git push heroku main"
@@ -16,8 +17,10 @@
   "dependencies": {
     "@angular/animations": "~13.1.0",
     "@angular/cdk": "^13.3.2",
+    "@angular/cli": "~13.1.2",
     "@angular/common": "~13.1.0",
     "@angular/compiler": "~13.1.0",
+    "@angular/compiler-cli": "~13.1.0",
     "@angular/core": "~13.1.0",
     "@angular/forms": "~13.1.0",
     "@angular/material": "^13.3.2",
@@ -26,6 +29,7 @@
     "@angular/router": "~13.1.0",
     "bootstrap": "^5.1.3",
     "chart.js": "^3.7.1",
+    "express": "^4.18.1",
     "heroku": "^7.60.1",
     "jquery": "^3.6.0",
     "moment": "^2.29.2",
@@ -37,6 +41,7 @@
     "sweetalert": "^2.1.2",
     "sweetalert2": "^11.4.10",
     "tslib": "^2.3.0",
+    "typescript": "~4.5.2",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
