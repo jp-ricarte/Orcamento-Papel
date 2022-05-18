@@ -15,35 +15,35 @@
     </div>
     
     <div class="d-flex column">
-        <div class="d-flex column align-center">
+        <div class="d-flex column align-start">
             <label>Chapa</label>
             <input class="input-fields" required [(ngModel)]="data.chapa" type="number" placeholder="Chapa">
         </div>
-        <div class="d-flex column align-center mt-3">
+        <div class="d-flex column align-start mt-3">
             <label>Horas de Impressão</label>
             <input class="input-fields" required type="number" [(ngModel)]="data.impressaoHora" placeholder="Horas de Impressão">
         </div>
-        <div class="d-flex column align-center mt-3">
+        <div class="d-flex column align-start mt-3">
             <label>Horas de acabamento</label>
             <input class="input-fields" required type="number" [(ngModel)]="data.acabamentoHora" placeholder="Horas de acabamento">
         </div>
-        <div class="d-flex column align-center mt-3">
+        <div class="d-flex column align-start mt-3">
             <label>Valor do Corte</label>
             <input class="input-fields" required [(ngModel)]="data.corte" currencyMask [options]="maskOptions" placeholder="Valor do Corte">
         </div>
-        <div class="d-flex column align-center mt-3">
+        <div class="d-flex column align-start mt-3">
             <label>Valor da Laminação</label>
             <input class="input-fields" required [(ngModel)]="data.laminacao" currencyMask [options]="maskOptions" placeholder="Valor da Laminação">
         </div>
-        <div class="d-flex column align-center mt-3">
+        <div class="d-flex column align-start mt-3">
             <label>Diversos</label>
             <input class="input-fields" required [(ngModel)]="data.diversos" currencyMask [options]="maskOptions" placeholder="Diversos">
         </div>
-        <div class="d-flex column align-center mt-3">
+        <div class="d-flex column align-start mt-3">
             <label>Margem de Lucro (%)</label>
             <input class="input-fields" required [(ngModel)]="data.lucro" mask="percent" suffix="%" placeholder="Lucro">
         </div>
-        <div class="d-flex column align-center mt-3">
+        <div class="d-flex column align-start mt-3">
             <label>Imposto (%)</label>
             <input class="input-fields" required [(ngModel)]="data.imposto" mask="percent" suffix="%" placeholder="Imposto">
         </div>

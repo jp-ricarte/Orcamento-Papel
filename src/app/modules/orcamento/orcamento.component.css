@@ -52,6 +52,10 @@ tr:nth-child(even) {
     align-items: center;
 }
 
+.align-start {
+    align-items: start;
+}
+
 .justify-content-center {
     justify-content: center;
 }
