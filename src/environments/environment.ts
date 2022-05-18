@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  //apiURL: 'http://127.0.0.1:3333'
-  apiURL: 'https://grafica-back.herokuapp.com'
+    apiURL: 'http://127.0.0.1:3333'
+  //apiURL: 'https://grafica-back.herokuapp.com'
 };
 
 /*
