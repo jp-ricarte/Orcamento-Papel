@@ -53,13 +53,11 @@ export class OrcamentoComponent implements OnInit {
         let canSave = this.canSave();
         if (canSave.ok) {
             this.service.calcularOrcamento(this.data).subscribe((response:any) => {
-                console.log('[VALOR]', response);
                 this.valor = response.valorOrcamento;
             })
         }
         else if (!this.data.papeis_id.length) {
             Swal.fire('Erro', 'Selecione pelo menos 1 papel', 'error');
-
         }
         else {
             Swal.fire('Erro', canSave.message, 'error');
